@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 Voice Control</h1>
+
+    <div class="lang-switcher">
+      <label for="langSelect">Язык / Language</label>
+      <select id="langSelect">
+        <option value="en-US">🇬🇧 English</option>
+        <option value="ru-RU">🇷🇺 Русский</option>
+      </select>
+    </div>
+
+    <button id="startBtn" class="btn btn-primary">Start Listening</button>
+    <button id="stopBtn" class="btn btn-danger" disabled>Stop Listening</button>
+    <div id="status" class="status">Ready</div>
+    <div id="transcript" class="transcript"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
